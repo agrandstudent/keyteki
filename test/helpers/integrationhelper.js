@@ -1,6 +1,3 @@
-/* global describe, beforeEach, jasmine */
-/* eslint camelcase: 0, no-invalid-this: 0 */
-
 const _ = require('underscore');
 
 require('./objectformatters.js');
@@ -151,6 +148,7 @@ beforeEach(function () {
     jasmine.addMatchers(customMatchers);
 });
 
+// @ts-ignore
 global.integration = function (definitions) {
     describe('integration', function () {
         beforeEach(function () {
