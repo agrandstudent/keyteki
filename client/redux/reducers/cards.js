@@ -48,7 +48,7 @@ function processDecks(decks, state) {
     }
 }
 
-export default function (state = { decks: [] }, action) {
+export default function (state = { decks: [], cards: [] }, action) {
     let newState;
     switch (action.type) {
         case 'RECEIVE_CARDS':
