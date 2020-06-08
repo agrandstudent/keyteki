@@ -24,6 +24,7 @@ const prettyJson = format.printf((info) => {
 
 const logger = createLogger({
     format: format.combine(
+        format.timestamp(),
         format.errors({ stack: true }),
         format.prettyPrint(),
         format.splat(),
